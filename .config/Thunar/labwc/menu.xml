@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openbox_menu>
+  <menu id="root-menu" label="Menu">
+	 <item label="Thunar" icon="thunar">
+      <action name="Execute"><command>thunar</command></action>
+    </item> 
+	  
+    <item label="Firefox" icon="firefox">
+      <action name="Execute"><command>firefox</command></action>
+    </item>
+    <item label="Terminal" icon="foot">
+      <action name="Execute"><command>foot</command></action>
+    </item>
+    <item label="App Launcher">
+      <action name="Execute"><command>wofi --show drun</command></action>
+    </item>
+
+    <separator/>
+    <menu id="apps-menu" label="Applications" execute="labwc-menu-generator -I --pipemenu --terminal-prefix='foot -e'"/>
+    <separator/>
+    
+  
+
+    <item label="Reconfigure labwc">
+      <action name="Reconfigure"/>
+    </item>
+    <item label="Exit labwc">
+      <action name="Exit"/>
+    </item>
+
+  </menu>
+</openbox_menu>

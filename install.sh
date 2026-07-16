@@ -25,7 +25,7 @@ sudo sv up polkitd
 sudo usermod -aG _seatd $USER
 
 #install wayland and labwc
-sudo xbps-install -Sy grim kanshi slurp mesa-dri wlr-randr wlroots Waybar pulseaudio xorg-server-xwayland  lxqt-policykit \
+sudo xbps-install -Sy grim kanshi slurp mako mesa-dri wlr-randr wlroots Waybar pulseaudio xorg-server-xwayland  lxqt-policykit \
 	pam_rundir
 mkdir  -p ~/.config/kanshi
 
