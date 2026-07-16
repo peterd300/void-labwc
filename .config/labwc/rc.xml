@@ -26,29 +26,27 @@
     </keybind>
     
     <keybind key="W-v">
-  <action name="Execute">
-    <command>/home/peter/.local/bin/clip-menu.sh</command>
-  </action>
-  </keybind>
+       <action name="Execute">
+         <command>/home/peter/.local/bin/clip-menu.sh</command>
+       </action>
+    </keybind>
 
-  <!--
-  <keybind key="Print">
-    <action name="Execute">
-    <command>sh -c 'grim ~/screenshots/screenshot-$(date +%Y%m%d-%H%M%S).png'</command>
-  </action>
-  </keybind>
-  -->
+    <keybind key="W-e">
+       <action name="Execute">
+         <command>geany</command>
+       </action>
+    </keybind>
 
   <keybind key="Print">
     <action name="Execute">
-      <command>/home/peter/.local/bin/screenshot.sh</command>
+      <command>/home/peter/.local/bin/full-screenshot.sh</command>
     </action>
   </keybind>
 
 
   <keybind key="S-Print">
     <action name="Execute">
-      <command>sh -c 'grim -g "$(slurp)" ~/screenshots/screenshot-$(date +%Y%m%d-%H%M%S).png'</command>
+      <command>/home/peter/.local/bin/screenshot.sh</command>
     </action>
 </keybind>
 
