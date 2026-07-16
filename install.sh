@@ -22,7 +22,7 @@ sudo sv up polkitd
 sudo usermod -aG _seatd $USER
 
 #install wayland and labwc
-sudo xbps-install -Sy grim kanshi slurp mesa-dri wlr-randr wlroots xorg-server-xwayland  lxqt-policykit \
+sudo xbps-install -Sy grim kanshi slurp mesa-dri wlr-randr wlroots Waybar pulseaudio xorg-server-xwayland  lxqt-policykit \
 	pam_rundir
 mkdir  -p ~/.config/kanshi
 
@@ -48,3 +48,6 @@ sudo xbps-install -Sy geany geany-editorconfig-plugin geany-plugins geany-plugin
 ## install x11 utils (icon theme switch werkt nog niet)
 sudo xbps-install -Sy adwaita-plus nerd-fonts font-awesome 
 
+## install sound support
+sudo xbps-install -Sy pipewire alsa-plugins-pulseaudio wireplumber pavucontrol pamixer
+sudo usermod -aG audio,video $(whoami)
