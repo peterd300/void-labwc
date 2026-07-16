@@ -15,10 +15,23 @@ with installation of
 
 some dotfiles for ~./config dir
 
+
+## Keybinding Labwc
+
+Super + Enter				=  foot terminal
+Super + g                   =  geany
+Super + v				    =  clipboard manager
+Super + Printscreen		    =  Print screen from the entire screen, saved in ~/screenshots
+Super + SHIFT + Printscreen =  Print Screen from a selected area, saved in ~/screenshots
+
+
+
 ## todo:
 
 - Internet browser
 - configuring waybar
 - wallpaper
 - notify 
+
+
 

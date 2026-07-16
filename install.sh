@@ -4,7 +4,7 @@ sudo xbps-install -Suy
 
 
 #install open-vmtools-agent for guest in Vmware workstation
-sudo xbps-install -Sy open-vm-tools
+sudo xbps-install -Sy open-vm-tools vmware-vmblock-fuse
 sudo ln -s /etc/sv/vmware-vmblock-fuse /var/service/
 sudo ln -s /etc/sv/vmtoolsd /var/service/
 
@@ -28,7 +28,7 @@ sudo usermod -aG _seatd $USER
 sudo xbps-install -Sy grim kanshi slurp mako mesa-dri wlr-randr wlroots Waybar pulseaudio xorg-server-xwayland  lxqt-policykit \
 	pam_rundir
 mkdir  -p ~/.config/kanshi
-
+mkdir  -p ~/screenshots
 
 sudo xbps-install -Sy labwc labwc-menu-generator foot wofi swaybg swayidle swaylock
 mkdir -p ~/.config/foot
