@@ -1,4 +1,4 @@
-# Installion of Labwc and Wayland in  Voidlinux
+# Installation of Labwc and Wayland in  Voidlinux
 
 
 
@@ -10,8 +10,15 @@ with installation of
 - geany
 - Thunar
 - foot terminal
-- labwc-generator
+- labwc-menu generator
+
 
 some dotfiles for ~./config dir
 
+## todo:
+
+- Internet browser
+- configuring waybar
+- wallpaper
+- notify 
 

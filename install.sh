@@ -1,5 +1,8 @@
 #!/bin/bash
 
+sudo xbps-install -Suy
+
+
 #install open-vmtools-agent for guest in Vmware workstation
 sudo xbps-install -Sy open-vm-tools
 sudo ln -s /etc/sv/vmware-vmblock-fuse /var/service/
@@ -30,13 +33,12 @@ mkdir  -p ~/.config/kanshi
 sudo xbps-install -Sy labwc labwc-menu-generator foot wofi swaybg swayidle swaylock
 mkdir -p ~/.config/foot
 sudo cp /etc/xdg/foot/foot.ini ~/.config/foot
+sudo chown peter:peter ~/.config/foot/foot.ini
 
 	
 mkdir -p ~/.config/labwc
 sudo cp /usr/share/doc/labwc/* ~/.config/labwc
 sudo chown -R peter:peter ~/.config/labwc/*
-
-xbps-install -Sy adwaita-fonts adwaita-plus
 
 
 #install filemanager + jpg viewer
@@ -45,9 +47,11 @@ sudo xbps-install -Sy Thunar thunar-archive-plugin thunar-media-tags-plugin tumb
 #install geany
 sudo xbps-install -Sy geany geany-editorconfig-plugin geany-plugins geany-plugins-extra
 
-## install x11 utils (icon theme switch werkt nog niet)
-sudo xbps-install -Sy adwaita-plus nerd-fonts font-awesome 
+## install x11  fonts
+sudo xbps-install -Sy nerd-fonts font-awesome adwaita-fonts adwaita-plus
 
 ## install sound support
 sudo xbps-install -Sy pipewire alsa-plugins-pulseaudio wireplumber pavucontrol pamixer
 sudo usermod -aG audio,video $(whoami)
+
+echo " end of script !!!" 
