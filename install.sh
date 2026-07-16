@@ -40,6 +40,8 @@ mkdir -p ~/.config/labwc
 sudo cp /usr/share/doc/labwc/* ~/.config/labwc
 sudo chown -R peter:peter ~/.config/labwc/*
 
+#install firefox
+sudo xbps-install -Sy firefox
 
 #install filemanager + jpg viewer
 sudo xbps-install -Sy Thunar thunar-archive-plugin thunar-media-tags-plugin tumbler lximage-qt  
