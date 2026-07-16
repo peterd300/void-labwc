@@ -1,0 +1,3 @@
+profile {
+     output VIRTUAL-1 1280x1024 position 0
+   }
