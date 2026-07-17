@@ -4,7 +4,7 @@ sudo xbps-install -Suy
 
 
 #install open-vmtools-agent for guest in Vmware workstation
-sudo xbps-install -Sy open-vm-tools vmware-vmblock-fuse
+sudo xbps-install -Sy open-vm-tools vmware-vmblock-fuse mesa-dri
 sudo ln -s /etc/sv/vmware-vmblock-fuse /var/service/
 sudo ln -s /etc/sv/vmtoolsd /var/service/
 
