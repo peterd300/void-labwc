@@ -4,7 +4,7 @@ sudo xbps-install -Suy
 
 
 #install open-vmtools-agent for guest in Vmware workstation
-sudo xbps-install -Sy open-vm-tools vmware-vmblock-fuse mesa-dri
+sudo xbps-install -Sy open-vm-tools mesa-vmwgfx-dri mesa-dri
 sudo ln -s /etc/sv/vmware-vmblock-fuse /var/service/
 sudo ln -s /etc/sv/vmtoolsd /var/service/
 
@@ -25,7 +25,7 @@ sudo sv up polkitd
 sudo usermod -aG _seatd $USER
 
 #install wayland and labwc
-sudo xbps-install -Sy grim kanshi slurp mako mesa-dri wlr-randr wlroots Waybar pulseaudio xorg-server-xwayland  lxqt-policykit \
+sudo xbps-install -Sy grim kanshi slurp mako mesa-dri wlr-randr wlrctl wlroots Waybar pulseaudio xorg-server-xwayland  lxqt-policykit \
 	pam_rundir
 mkdir  -p ~/.config/kanshi
 mkdir  -p ~/screenshots
