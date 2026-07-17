@@ -50,7 +50,10 @@ sudo xbps-install -Sy Thunar thunar-archive-plugin thunar-media-tags-plugin tumb
 sudo xbps-install -Sy geany geany-editorconfig-plugin geany-plugins geany-plugins-extra
 
 ## install x11  fonts
-sudo xbps-install -Sy nerd-fonts font-awesome adwaita-fonts adwaita-plus
+sudo xbps-install -Sy font-awesome adwaita-fonts adwaita-plus
+# temporary disabled do to slow download and installation
+# sudo xbps-install -Sy nerd-fonts
+
 
 ## install sound support
 sudo xbps-install -Sy pipewire alsa-plugins-pulseaudio wireplumber pavucontrol pamixer
